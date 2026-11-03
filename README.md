@@ -84,6 +84,7 @@ All data is synthetic. The names are neutral, the companies are generic, the loc
 | `eval/mock.py` | The scripted stand-ins: one that answers well, one that answers badly. |
 | `eval/run_eval.js` | The scorecard starts harnesses with Node; this hands the call to `eval.py`. |
 | `package.json` | Only so Node reads `eval/run_eval.js` the same way wherever the scorecard copies the build. |
+| `package-lock.json` | Empty of dependencies; there so the scorecard's CI can run `npm ci` here as it does in every build. |
 | `requirements.txt` | The two Python packages, pinned. |
 | `run`, `evals` | Short forms of `run.py` and `eval.py` through uv. |
 | `VERSIONS.md` | Each version's results against the one before, and what the next version changes. |
