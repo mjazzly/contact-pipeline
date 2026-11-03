@@ -74,6 +74,7 @@ All data is synthetic. The names are neutral, the companies are generic, the loc
 | `pipeline/titles.py` | The title read: redaction, the model call, the answer check, the floor. |
 | `pipeline/stub.py` | The email validation service, as a seeded stub. |
 | `prompts/title_read.md` | The model's only instructions, with its version line. |
+| `prompts/v1.0.md` | The v1.0 prompt, kept as it was; nothing reads it. |
 | `data/round_cases.csv` | The case round. |
 | `data/round_repeats.csv` | The round for C21: repeated titles. |
 | `data/stub_fixtures.json` | The stub's fixed verdicts for the case round. |

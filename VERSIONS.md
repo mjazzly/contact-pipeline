@@ -36,7 +36,11 @@ Prompt v1.1, pipeline 1.1.0, checker 2. Built 3 Nov 2026 after the v1.0 baseline
 | Model | Code cases | Titles | Floor flips | Gates | Passed | Cost | Result |
 |---|---|---|---|---|---|---|---|
 | claude-haiku-5-5 | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0010 | [N202611032037](eval/results/N202611032037-haiku-5-5.json), 3 Nov 2026 |
-| claude-opus-5-5, high | | | | | | | pending |
+| claude-opus-5-5, high | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0358 | [N202611032050](eval/results/N202611032050-opus-5-5-high.json), 3 Nov 2026 |
+
+claude-opus-5-5 at high effort against v1.0: no case changed state, and every one of the 22 titles got the same seniority and function as on v1.0. Without the company it read fewer input tokens (547 against 881) and wrote fewer output tokens (1,486 against 1,630), so the run cost about a tenth less (US$0.0358 against US$0.0401).
+
+**The smallest passing model on v1.1 is claude-haiku-5-5, on one run.** Given how its answers moved between runs on v1.0, that needs repeated runs before it is relied on.
 
 claude-haiku-5-5 against v1.0: two cases changed state, both from missed to matched. T13 Director-elect was read as director with function unknown, the two judged apart this time. T14 Chief of Staff was read as director ("not a top officer"). Head of Technology and Head of People came back as vp. C21 matched; it has no v1.0 result. Input tokens fell from 881 to 547 without the company; output rose from 1,045 to 1,648, so the run cost more (US$0.0010 against US$0.0007).
 
@@ -52,6 +56,6 @@ Decided before the build:
 - **The company is no longer sent.** A request entry holds a title key and the title, nothing else.
 - **The case round is unchanged**, so v1.1 compares with v1.0 on the same 42 cases. A new code case, C21, runs `data/round_repeats.csv` (eight rows, four distinct titles) with the scripted stand-in and checks each title is asked once and every row carrying it gets that answer. From v1.1 there are 43 cases; C21 has no v1.0 result to compare.
 
-**The prompt.** v1.1 changes four lines of v1.0 and no guidance: the version line, "a row key, the company name and the job title" became "a title key and the job title", and the answer format and its closing rule name title keys instead of row keys. The seniority and function definitions are word for word the same. Leaving out the company may still move a model's answers; the comparison will show it.
+**The prompt.** v1.1 changes four lines of v1.0 and no guidance: the version line, "a row key, the company name and the job title" became "a title key and the job title", and the answer format and its closing rule name title keys instead of row keys. The seniority and function definitions are word for word the same. The v1.0 prompt is kept unchanged in [prompts/v1.0.md](prompts/v1.0.md); the pipeline reads only `prompts/title_read.md`.
 
 What it will not do: make an answer right. It makes every row with that title share one answer, right or wrong. In the case round every title sent is already distinct, so on the 22 title cases v1.1 can only differ from v1.0 through the request no longer carrying the company, and through the model's own variation from run to run.
