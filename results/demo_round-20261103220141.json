@@ -1,0 +1,1507 @@
+{
+  "round": "demo_round.xlsx",
+  "pipeline_version": "1.1.0",
+  "prompt_version": "v1.1",
+  "started_at": "2026-11-03T22:01:41",
+  "status": "complete",
+  "halt": null,
+  "counts": {
+    "intake": 120,
+    "after_scope": 105,
+    "at_or_above_floor": 76,
+    "below_floor": 29,
+    "distinct_titles": 32,
+    "after_validation": 64,
+    "import_rows": 64
+  },
+  "stops": [
+    {
+      "stop": 1,
+      "name": "rows read",
+      "count": 120,
+      "detail": {
+        "blank_lines_skipped": 0,
+        "columns": 18
+      },
+      "confirmed": true,
+      "how": "--confirm-all",
+      "at": "2026-11-03T22:01:41"
+    },
+    {
+      "stop": 2,
+      "name": "rows in scope",
+      "count": 105,
+      "detail": {
+        "excluded": {
+          "malformed email": 5,
+          "country out of scope": 1,
+          "duplicate email": 4,
+          "blank email": 2,
+          "no person location": 3
+        },
+        "columns_dropped": [
+          "record_id",
+          "phone",
+          "company_industry",
+          "company_city",
+          "company_state",
+          "company_country",
+          "profile_url",
+          "vendor_score"
+        ]
+      },
+      "confirmed": true,
+      "how": "--confirm-all",
+      "at": "2026-11-03T22:01:41"
+    },
+    {
+      "stop": 3,
+      "name": "rows at or above the seniority floor",
+      "count": 76,
+      "detail": {
+        "distinct_titles_asked": 32,
+        "below_floor": 29,
+        "below_floor_rows": [
+          {
+            "row_key": "r0012",
+            "title": "Account Executive",
+            "seniority": "staff",
+            "reason": "Account executive, an individual sales contributor."
+          },
+          {
+            "row_key": "r0014",
+            "title": "Office Manager",
+            "seniority": "manager",
+            "reason": "Office manager running office administration."
+          },
+          {
+            "row_key": "r0017",
+            "title": "Office Manager",
+            "seniority": "manager",
+            "reason": "Office manager running office administration."
+          },
+          {
+            "row_key": "r0028",
+            "title": "Assistant to the Director",
+            "seniority": "staff",
+            "reason": "Assistant role; level follows the director being assisted, but the holder is support staff."
+          },
+          {
+            "row_key": "r0031",
+            "title": "Account Executive",
+            "seniority": "staff",
+            "reason": "Account executive, an individual sales contributor."
+          },
+          {
+            "row_key": "r0032",
+            "title": "Facilities Coordinator",
+            "seniority": "staff",
+            "reason": "Facilities coordinator, a support role in facilities."
+          },
+          {
+            "row_key": "r0033",
+            "title": "Talent Acquisition Lead",
+            "seniority": "manager",
+            "reason": "Talent acquisition lead, a team lead in recruiting."
+          },
+          {
+            "row_key": "r0037",
+            "title": "Assistant to the Director",
+            "seniority": "staff",
+            "reason": "Assistant role; level follows the director being assisted, but the holder is support staff."
+          },
+          {
+            "row_key": "r0039",
+            "title": "Executive Assistant",
+            "seniority": "staff",
+            "reason": "Executive assistant, an administrative support role."
+          },
+          {
+            "row_key": "r0040",
+            "title": "Payroll Specialist",
+            "seniority": "staff",
+            "reason": "Payroll specialist, an individual contributor in payroll."
+          },
+          {
+            "row_key": "r0049",
+            "title": "Payroll Specialist",
+            "seniority": "staff",
+            "reason": "Payroll specialist, an individual contributor in payroll."
+          },
+          {
+            "row_key": "r0056",
+            "title": "",
+            "seniority": "unknown",
+            "reason": "Empty title; no seniority or function can be read."
+          },
+          {
+            "row_key": "r0061",
+            "title": "Payroll Specialist",
+            "seniority": "staff",
+            "reason": "Payroll specialist, an individual contributor in payroll."
+          },
+          {
+            "row_key": "r0071",
+            "title": "Executive Assistant",
+            "seniority": "staff",
+            "reason": "Executive assistant, an administrative support role."
+          },
+          {
+            "row_key": "r0075",
+            "title": "Account Executive",
+            "seniority": "staff",
+            "reason": "Account executive, an individual sales contributor."
+          },
+          {
+            "row_key": "r0078",
+            "title": "Payroll Specialist",
+            "seniority": "staff",
+            "reason": "Payroll specialist, an individual contributor in payroll."
+          },
+          {
+            "row_key": "r0080",
+            "title": "Talent Acquisition Lead",
+            "seniority": "manager",
+            "reason": "Talent acquisition lead, a team lead in recruiting."
+          },
+          {
+            "row_key": "r0082",
+            "title": "Office Manager",
+            "seniority": "manager",
+            "reason": "Office manager running office administration."
+          },
+          {
+            "row_key": "r0085",
+            "title": "Office Manager",
+            "seniority": "manager",
+            "reason": "Office manager running office administration."
+          },
+          {
+            "row_key": "r0089",
+            "title": "Procurement Manager",
+            "seniority": "manager",
+            "reason": "Manager of procurement, which falls under operations."
+          },
+          {
+            "row_key": "r0091",
+            "title": "Office Manager",
+            "seniority": "manager",
+            "reason": "Office manager running office administration."
+          },
+          {
+            "row_key": "r0092",
+            "title": "Account Executive",
+            "seniority": "staff",
+            "reason": "Account executive, an individual sales contributor."
+          },
+          {
+            "row_key": "r0093",
+            "title": "Senior Manager, Benefits",
+            "seniority": "manager",
+            "reason": "Senior manager over benefits, an HR function."
+          },
+          {
+            "row_key": "r0097",
+            "title": "Facilities Coordinator",
+            "seniority": "staff",
+            "reason": "Facilities coordinator, a support role in facilities."
+          },
+          {
+            "row_key": "r0109",
+            "title": "Payroll Specialist",
+            "seniority": "staff",
+            "reason": "Payroll specialist, an individual contributor in payroll."
+          },
+          {
+            "row_key": "r0110",
+            "title": "Assistant to the Director",
+            "seniority": "staff",
+            "reason": "Assistant role; level follows the director being assisted, but the holder is support staff."
+          },
+          {
+            "row_key": "r0111",
+            "title": "Senior Manager, Benefits",
+            "seniority": "manager",
+            "reason": "Senior manager over benefits, an HR function."
+          },
+          {
+            "row_key": "r0112",
+            "title": "Facilities Coordinator",
+            "seniority": "staff",
+            "reason": "Facilities coordinator, a support role in facilities."
+          },
+          {
+            "row_key": "r0118",
+            "title": "Procurement Manager",
+            "seniority": "manager",
+            "reason": "Manager of procurement, which falls under operations."
+          }
+        ]
+      },
+      "confirmed": true,
+      "how": "--confirm-all",
+      "at": "2026-11-03T22:01:51"
+    },
+    {
+      "stop": 4,
+      "name": "rows with a valid or suspect email",
+      "count": 64,
+      "detail": {
+        "valid": 54,
+        "suspect": 10,
+        "excluded": {
+          "invalid": 5,
+          "honeypot": 2,
+          "no_result": 5
+        }
+      },
+      "confirmed": true,
+      "how": "--confirm-all",
+      "at": "2026-11-03T22:01:51"
+    }
+  ],
+  "exclusions": [
+    {
+      "row_key": "r0001",
+      "stage": 2,
+      "reason": "malformed email"
+    },
+    {
+      "row_key": "r0002",
+      "stage": 2,
+      "reason": "country out of scope (Mexico)"
+    },
+    {
+      "row_key": "r0008",
+      "stage": 2,
+      "reason": "duplicate of r0005"
+    },
+    {
+      "row_key": "r0022",
+      "stage": 2,
+      "reason": "blank email"
+    },
+    {
+      "row_key": "r0034",
+      "stage": 2,
+      "reason": "duplicate of r0009"
+    },
+    {
+      "row_key": "r0048",
+      "stage": 2,
+      "reason": "no person location"
+    },
+    {
+      "row_key": "r0053",
+      "stage": 2,
+      "reason": "no person location"
+    },
+    {
+      "row_key": "r0060",
+      "stage": 2,
+      "reason": "blank email"
+    },
+    {
+      "row_key": "r0064",
+      "stage": 2,
+      "reason": "malformed email"
+    },
+    {
+      "row_key": "r0068",
+      "stage": 2,
+      "reason": "duplicate of r0006"
+    },
+    {
+      "row_key": "r0083",
+      "stage": 2,
+      "reason": "duplicate of r0037"
+    },
+    {
+      "row_key": "r0107",
+      "stage": 2,
+      "reason": "malformed email"
+    },
+    {
+      "row_key": "r0114",
+      "stage": 2,
+      "reason": "no person location"
+    },
+    {
+      "row_key": "r0115",
+      "stage": 2,
+      "reason": "malformed email"
+    },
+    {
+      "row_key": "r0116",
+      "stage": 2,
+      "reason": "malformed email"
+    },
+    {
+      "row_key": "r0012",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0014",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0017",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0028",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0031",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0032",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0033",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0037",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0039",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0040",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0049",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0056",
+      "stage": 3,
+      "reason": "below seniority floor (unknown)"
+    },
+    {
+      "row_key": "r0061",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0071",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0075",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0078",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0080",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0082",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0085",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0089",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0091",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0092",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0093",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0097",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0109",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0110",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0111",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0112",
+      "stage": 3,
+      "reason": "below seniority floor (staff)"
+    },
+    {
+      "row_key": "r0118",
+      "stage": 3,
+      "reason": "below seniority floor (manager)"
+    },
+    {
+      "row_key": "r0003",
+      "stage": 4,
+      "reason": "validation: invalid"
+    },
+    {
+      "row_key": "r0018",
+      "stage": 4,
+      "reason": "validation: honeypot"
+    },
+    {
+      "row_key": "r0043",
+      "stage": 4,
+      "reason": "validation: no_result"
+    },
+    {
+      "row_key": "r0052",
+      "stage": 4,
+      "reason": "validation: no_result"
+    },
+    {
+      "row_key": "r0059",
+      "stage": 4,
+      "reason": "validation: invalid"
+    },
+    {
+      "row_key": "r0065",
+      "stage": 4,
+      "reason": "validation: no_result"
+    },
+    {
+      "row_key": "r0077",
+      "stage": 4,
+      "reason": "validation: no_result"
+    },
+    {
+      "row_key": "r0094",
+      "stage": 4,
+      "reason": "validation: invalid"
+    },
+    {
+      "row_key": "r0098",
+      "stage": 4,
+      "reason": "validation: invalid"
+    },
+    {
+      "row_key": "r0101",
+      "stage": 4,
+      "reason": "validation: invalid"
+    },
+    {
+      "row_key": "r0103",
+      "stage": 4,
+      "reason": "validation: honeypot"
+    },
+    {
+      "row_key": "r0105",
+      "stage": 4,
+      "reason": "validation: no_result"
+    }
+  ],
+  "titles": [
+    {
+      "row_key": "r0003",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0004",
+      "title_key": "t002",
+      "title": "Director-elect",
+      "seniority": "director",
+      "function": "unknown",
+      "reason": "Incoming director title; the function is not named.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0005",
+      "title_key": "t003",
+      "title": "Chief Operating Officer",
+      "seniority": "c_suite",
+      "function": "operations",
+      "reason": "Chief operating officer, top officer of operations at company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0006",
+      "title_key": "t004",
+      "title": "Director of Operations",
+      "seniority": "director",
+      "function": "operations",
+      "reason": "Director of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0007",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0009",
+      "title_key": "t006",
+      "title": "Head of People",
+      "seniority": "vp",
+      "function": "people",
+      "reason": "Head of people, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0010",
+      "title_key": "t003",
+      "title": "Chief Operating Officer",
+      "seniority": "c_suite",
+      "function": "operations",
+      "reason": "Chief operating officer, top officer of operations at company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0011",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0012",
+      "title_key": "t007",
+      "title": "Account Executive",
+      "seniority": "staff",
+      "function": "sales",
+      "reason": "Account executive, an individual sales contributor.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0013",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0014",
+      "title_key": "t008",
+      "title": "Office Manager",
+      "seniority": "manager",
+      "function": "administration",
+      "reason": "Office manager running office administration.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0015",
+      "title_key": "t009",
+      "title": "CHIEF FINANCIAL OFFICER",
+      "seniority": "c_suite",
+      "function": "finance",
+      "reason": "Chief financial officer, top officer of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0016",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0017",
+      "title_key": "t008",
+      "title": "Office Manager",
+      "seniority": "manager",
+      "function": "administration",
+      "reason": "Office manager running office administration.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0018",
+      "title_key": "t011",
+      "title": "VP Operations",
+      "seniority": "vp",
+      "function": "operations",
+      "reason": "Vice president of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0019",
+      "title_key": "t012",
+      "title": "Senior Director, Supply Chain",
+      "seniority": "director",
+      "function": "operations",
+      "reason": "Senior director over supply chain, an operations function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0020",
+      "title_key": "t012",
+      "title": "Senior Director, Supply Chain",
+      "seniority": "director",
+      "function": "operations",
+      "reason": "Senior director over supply chain, an operations function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0021",
+      "title_key": "t006",
+      "title": "Head of People",
+      "seniority": "vp",
+      "function": "people",
+      "reason": "Head of people, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0023",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0024",
+      "title_key": "t013",
+      "title": "Director of Finance",
+      "seniority": "director",
+      "function": "finance",
+      "reason": "Director of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0025",
+      "title_key": "t009",
+      "title": "CHIEF FINANCIAL OFFICER",
+      "seniority": "c_suite",
+      "function": "finance",
+      "reason": "Chief financial officer, top officer of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0026",
+      "title_key": "t011",
+      "title": "VP Operations",
+      "seniority": "vp",
+      "function": "operations",
+      "reason": "Vice president of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0027",
+      "title_key": "t014",
+      "title": "General Counsel",
+      "seniority": "c_suite",
+      "function": "legal",
+      "reason": "General counsel, top legal officer of the company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0028",
+      "title_key": "t015",
+      "title": "Assistant to the Director",
+      "seniority": "staff",
+      "function": "administration",
+      "reason": "Assistant role; level follows the director being assisted, but the holder is support staff.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0029",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0030",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0031",
+      "title_key": "t007",
+      "title": "Account Executive",
+      "seniority": "staff",
+      "function": "sales",
+      "reason": "Account executive, an individual sales contributor.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0032",
+      "title_key": "t016",
+      "title": "Facilities Coordinator",
+      "seniority": "staff",
+      "function": "operations",
+      "reason": "Facilities coordinator, a support role in facilities.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0033",
+      "title_key": "t017",
+      "title": "Talent Acquisition Lead",
+      "seniority": "manager",
+      "function": "people",
+      "reason": "Talent acquisition lead, a team lead in recruiting.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0035",
+      "title_key": "t009",
+      "title": "CHIEF FINANCIAL OFFICER",
+      "seniority": "c_suite",
+      "function": "finance",
+      "reason": "Chief financial officer, top officer of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0036",
+      "title_key": "t018",
+      "title": "Founder and CEO",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "Founder and CEO, runs the whole company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0037",
+      "title_key": "t015",
+      "title": "Assistant to the Director",
+      "seniority": "staff",
+      "function": "administration",
+      "reason": "Assistant role; level follows the director being assisted, but the holder is support staff.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0038",
+      "title_key": "t019",
+      "title": "IT Director",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "IT director, head of IT below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0039",
+      "title_key": "t020",
+      "title": "Executive Assistant",
+      "seniority": "staff",
+      "function": "administration",
+      "reason": "Executive assistant, an administrative support role.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0040",
+      "title_key": "t021",
+      "title": "Payroll Specialist",
+      "seniority": "staff",
+      "function": "people",
+      "reason": "Payroll specialist, an individual contributor in payroll.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0041",
+      "title_key": "t011",
+      "title": "VP Operations",
+      "seniority": "vp",
+      "function": "operations",
+      "reason": "Vice president of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0042",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0043",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0044",
+      "title_key": "t002",
+      "title": "Director-elect",
+      "seniority": "director",
+      "function": "unknown",
+      "reason": "Incoming director title; the function is not named.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0045",
+      "title_key": "t022",
+      "title": "Head of Data",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "Head of data, a function head below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0046",
+      "title_key": "t006",
+      "title": "Head of People",
+      "seniority": "vp",
+      "function": "people",
+      "reason": "Head of people, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0047",
+      "title_key": "t003",
+      "title": "Chief Operating Officer",
+      "seniority": "c_suite",
+      "function": "operations",
+      "reason": "Chief operating officer, top officer of operations at company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0049",
+      "title_key": "t021",
+      "title": "Payroll Specialist",
+      "seniority": "staff",
+      "function": "people",
+      "reason": "Payroll specialist, an individual contributor in payroll.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0050",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0051",
+      "title_key": "t002",
+      "title": "Director-elect",
+      "seniority": "director",
+      "function": "unknown",
+      "reason": "Incoming director title; the function is not named.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0052",
+      "title_key": "t004",
+      "title": "Director of Operations",
+      "seniority": "director",
+      "function": "operations",
+      "reason": "Director of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0054",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0055",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0056",
+      "title_key": "t024",
+      "title": "",
+      "seniority": "unknown",
+      "function": "unknown",
+      "reason": "Empty title; no seniority or function can be read.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0057",
+      "title_key": "t018",
+      "title": "Founder and CEO",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "Founder and CEO, runs the whole company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0058",
+      "title_key": "t019",
+      "title": "IT Director",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "IT director, head of IT below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0059",
+      "title_key": "t025",
+      "title": "Controller",
+      "seniority": "director",
+      "function": "finance",
+      "reason": "Controller, head of the accounting function below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0061",
+      "title_key": "t021",
+      "title": "Payroll Specialist",
+      "seniority": "staff",
+      "function": "people",
+      "reason": "Payroll specialist, an individual contributor in payroll.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0062",
+      "title_key": "t009",
+      "title": "CHIEF FINANCIAL OFFICER",
+      "seniority": "c_suite",
+      "function": "finance",
+      "reason": "Chief financial officer, top officer of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0063",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0065",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0066",
+      "title_key": "t018",
+      "title": "Founder and CEO",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "Founder and CEO, runs the whole company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0067",
+      "title_key": "t026",
+      "title": "Director of Sales",
+      "seniority": "director",
+      "function": "sales",
+      "reason": "Director heading sales function below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0069",
+      "title_key": "t014",
+      "title": "General Counsel",
+      "seniority": "c_suite",
+      "function": "legal",
+      "reason": "General counsel, top legal officer of the company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0070",
+      "title_key": "t018",
+      "title": "Founder and CEO",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "Founder and CEO, runs the whole company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0071",
+      "title_key": "t020",
+      "title": "Executive Assistant",
+      "seniority": "staff",
+      "function": "administration",
+      "reason": "Executive assistant, an administrative support role.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0072",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0073",
+      "title_key": "t009",
+      "title": "CHIEF FINANCIAL OFFICER",
+      "seniority": "c_suite",
+      "function": "finance",
+      "reason": "Chief financial officer, top officer of finance.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0074",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0075",
+      "title_key": "t007",
+      "title": "Account Executive",
+      "seniority": "staff",
+      "function": "sales",
+      "reason": "Account executive, an individual sales contributor.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0076",
+      "title_key": "t027",
+      "title": "Director, Human Resources",
+      "seniority": "director",
+      "function": "people",
+      "reason": "Director leading human resources function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0077",
+      "title_key": "t003",
+      "title": "Chief Operating Officer",
+      "seniority": "c_suite",
+      "function": "operations",
+      "reason": "Chief operating officer, top officer of operations at company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0078",
+      "title_key": "t021",
+      "title": "Payroll Specialist",
+      "seniority": "staff",
+      "function": "people",
+      "reason": "Payroll specialist, an individual contributor in payroll.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0079",
+      "title_key": "t025",
+      "title": "Controller",
+      "seniority": "director",
+      "function": "finance",
+      "reason": "Controller, head of the accounting function below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0080",
+      "title_key": "t017",
+      "title": "Talent Acquisition Lead",
+      "seniority": "manager",
+      "function": "people",
+      "reason": "Talent acquisition lead, a team lead in recruiting.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0081",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0082",
+      "title_key": "t008",
+      "title": "Office Manager",
+      "seniority": "manager",
+      "function": "administration",
+      "reason": "Office manager running office administration.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0084",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0085",
+      "title_key": "t008",
+      "title": "Office Manager",
+      "seniority": "manager",
+      "function": "administration",
+      "reason": "Office manager running office administration.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0086",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0087",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0088",
+      "title_key": "t002",
+      "title": "Director-elect",
+      "seniority": "director",
+      "function": "unknown",
+      "reason": "Incoming director title; the function is not named.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0089",
+      "title_key": "t028",
+      "title": "Procurement Manager",
+      "seniority": "manager",
+      "function": "operations",
+      "reason": "Manager of procurement, which falls under operations.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0090",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0091",
+      "title_key": "t008",
+      "title": "Office Manager",
+      "seniority": "manager",
+      "function": "administration",
+      "reason": "Office manager running office administration.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0092",
+      "title_key": "t007",
+      "title": "Account Executive",
+      "seniority": "staff",
+      "function": "sales",
+      "reason": "Account executive, an individual sales contributor.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0093",
+      "title_key": "t029",
+      "title": "Senior Manager, Benefits",
+      "seniority": "manager",
+      "function": "people",
+      "reason": "Senior manager over benefits, an HR function.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0094",
+      "title_key": "t019",
+      "title": "IT Director",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "IT director, head of IT below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0095",
+      "title_key": "t018",
+      "title": "Founder and CEO",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "Founder and CEO, runs the whole company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0096",
+      "title_key": "t022",
+      "title": "Head of Data",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "Head of data, a function head below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0097",
+      "title_key": "t016",
+      "title": "Facilities Coordinator",
+      "seniority": "staff",
+      "function": "operations",
+      "reason": "Facilities coordinator, a support role in facilities.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0098",
+      "title_key": "t002",
+      "title": "Director-elect",
+      "seniority": "director",
+      "function": "unknown",
+      "reason": "Incoming director title; the function is not named.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0099",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0100",
+      "title_key": "t022",
+      "title": "Head of Data",
+      "seniority": "director",
+      "function": "technology",
+      "reason": "Head of data, a function head below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0101",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0102",
+      "title_key": "t030",
+      "title": "VP Finance",
+      "seniority": "vp",
+      "function": "finance",
+      "reason": "Vice president heading finance function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0103",
+      "title_key": "t023",
+      "title": "Chief of Staff",
+      "seniority": "director",
+      "function": "general_management",
+      "reason": "Chief of staff working across functions for the top executive.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0104",
+      "title_key": "t026",
+      "title": "Director of Sales",
+      "seniority": "director",
+      "function": "sales",
+      "reason": "Director heading sales function below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0105",
+      "title_key": "t025",
+      "title": "Controller",
+      "seniority": "director",
+      "function": "finance",
+      "reason": "Controller, head of the accounting function below company level.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0106",
+      "title_key": "t031",
+      "title": "President",
+      "seniority": "c_suite",
+      "function": "general_management",
+      "reason": "President, the top officer of the company.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0108",
+      "title_key": "t005",
+      "title": "Head of Technology",
+      "seniority": "vp",
+      "function": "technology",
+      "reason": "Head of technology, a company-level function head.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0109",
+      "title_key": "t021",
+      "title": "Payroll Specialist",
+      "seniority": "staff",
+      "function": "people",
+      "reason": "Payroll specialist, an individual contributor in payroll.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0110",
+      "title_key": "t015",
+      "title": "Assistant to the Director",
+      "seniority": "staff",
+      "function": "administration",
+      "reason": "Assistant role; level follows the director being assisted, but the holder is support staff.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0111",
+      "title_key": "t029",
+      "title": "Senior Manager, Benefits",
+      "seniority": "manager",
+      "function": "people",
+      "reason": "Senior manager over benefits, an HR function.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0112",
+      "title_key": "t016",
+      "title": "Facilities Coordinator",
+      "seniority": "staff",
+      "function": "operations",
+      "reason": "Facilities coordinator, a support role in facilities.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0113",
+      "title_key": "t011",
+      "title": "VP Operations",
+      "seniority": "vp",
+      "function": "operations",
+      "reason": "Vice president of operations.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0117",
+      "title_key": "t010",
+      "title": "VP Sales",
+      "seniority": "vp",
+      "function": "sales",
+      "reason": "Vice president of sales.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0118",
+      "title_key": "t028",
+      "title": "Procurement Manager",
+      "seniority": "manager",
+      "function": "operations",
+      "reason": "Manager of procurement, which falls under operations.",
+      "floor": "out"
+    },
+    {
+      "row_key": "r0119",
+      "title_key": "t032",
+      "title": "Vice President, Human Resources",
+      "seniority": "vp",
+      "function": "people",
+      "reason": "Vice president heading human resources function.",
+      "floor": "in"
+    },
+    {
+      "row_key": "r0120",
+      "title_key": "t001",
+      "title": "Chief Information Officer",
+      "seniority": "c_suite",
+      "function": "technology",
+      "reason": "Chief information officer, top officer of the technology function.",
+      "floor": "in"
+    }
+  ],
+  "import_file": "output/demo_round_import.csv",
+  "model": {
+    "id": "claude-haiku-5-5",
+    "effort": null,
+    "calls": 2,
+    "tokens": {
+      "input": 785,
+      "output": 2286,
+      "cache_read": 788,
+      "cache_write": 788
+    },
+    "cost_usd": 0.00132788
+  },
+  "validation_calls": 76,
+  "finished_at": "2026-11-03T22:01:51"
+}
