@@ -76,8 +76,8 @@ def main():
     result = {"label": label, "run_id": run_id, "date": started.date().isoformat(),
               "started_at": started.isoformat(timespec="seconds"), "mode": "mock" if a.mock else "harness",
               "blind": True, "counted": False, "skill_version": model.version, "server_version": VERSION,
-              "checker_version": CHECKER_VERSION, "model": None if a.mock else a.model, "effort": a.effort,
-              "completed": False, "error": None}
+              "checker_version": CHECKER_VERSION, "model": "mock (scripted, no model)" if a.mock else a.model,
+              "effort": a.effort, "completed": False, "error": None}
     payloads, stub_calls = {}, []
     try:
         stub = ValidationStub(FIXTURES)

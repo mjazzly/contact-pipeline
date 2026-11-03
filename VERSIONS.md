@@ -36,15 +36,18 @@ Prompt v1.1, pipeline 1.1.0, checker 2. Built 3 Nov 2026 after the v1.0 baseline
 | Model | Code cases | Titles | Floor flips | Gates | Passed | Cost | Result |
 |---|---|---|---|---|---|---|---|
 | claude-haiku-5-5 | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0010 | [N202611032037](eval/results/N202611032037-haiku-5-5.json), 3 Nov 2026 |
+| claude-haiku-5-5, rerun | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0010 | [N202611032125](eval/results/N202611032125-haiku-5-5.json), 3 Nov 2026 |
+| claude-haiku-5-5, rerun | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0009 | [N202611032126](eval/results/N202611032126-haiku-5-5.json), 3 Nov 2026 |
+| claude-haiku-5-5, rerun | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0009 | [N202611032128](eval/results/N202611032128-haiku-5-5.json), 3 Nov 2026 |
 | claude-opus-5-5, high | 21 of 21 | 22 of 22 | 0 | 3 of 3 | yes | US$0.0358 | [N202611032050](eval/results/N202611032050-opus-5-5-high.json), 3 Nov 2026 |
 
 claude-opus-5-5 at high effort against v1.0: no case changed state, and every one of the 22 titles got the same seniority and function as on v1.0. Without the company it read fewer input tokens (547 against 881) and wrote fewer output tokens (1,486 against 1,630), so the run cost about a tenth less (US$0.0358 against US$0.0401).
 
-**The smallest passing model on v1.1 is claude-haiku-5-5, on one run.** Given how its answers moved between runs on v1.0, that needs repeated runs before it is relied on.
+**The smallest passing model on v1.1 is claude-haiku-5-5, on four runs of four.** After its first pass it was run three more times on the same code, because its answers had moved between runs on v1.0. All four passed, and all four gave every one of the 22 titles the same seniority and function. claude-opus-5-5 at high effort passed both versions.
 
 claude-haiku-5-5 against v1.0: two cases changed state, both from missed to matched. T13 Director-elect was read as director with function unknown, the two judged apart this time. T14 Chief of Staff was read as director ("not a top officer"). Head of Technology and Head of People came back as vp. C21 matched; it has no v1.0 result. Input tokens fell from 881 to 547 without the company; output rose from 1,045 to 1,648, so the run cost more (US$0.0010 against US$0.0007).
 
-This is one run, and it cannot say what made the difference. Every title in the case round is distinct, so deduplication did not touch it; what changed for the model is the request without the company, and the prompt lines that describe it. On v1.0, two haiku runs on the same round missed on different titles, so a single pass on v1.1 may be the same variation landing the other way. Repeated runs on both versions would separate the two.
+What made the difference is not settled. Every title in the case round is distinct, so deduplication did not touch it; what changed for the model is the request without the company, and the prompt lines that describe it. On v1.0 two haiku runs missed on different titles; on v1.1 four runs answered identically. That points at the request, but v1.0 had only two runs, so it is a pointer and not a proof.
 
 **What changed.** Titles are deduplicated before the model call (P2): each distinct title is asked once, and its answer is given to every row that carries it, so the same title can never get two answers in one run. Stop 3 and the run record still list every row, with the title key and the answer its title received.
 
