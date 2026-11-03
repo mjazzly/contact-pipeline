@@ -1,0 +1,28 @@
+{
+  "note": "Fixed verdicts for the case round. Any address not listed here gets a verdict from a hash of the seed and the address.",
+  "seed": 6,
+  "verdicts": {
+    "avery.collins@harborline.example": "valid",
+    "quinn.foster@pinecrest.example": "valid",
+    "skyler.grant@lakeview.example": "valid",
+    "taylor.brooks@summitridge.example": "valid",
+    "sam.lee@northfield.example": "valid",
+    "drew.palmer@cobaltgrid.example": "valid",
+    "emerson.vale@oakmont.example": "honeypot",
+    "finley.ross@bluestem.example": "suspect",
+    "harper.wells@redfern.example": "no_result",
+    "jesse.tran@westgate.example": "invalid",
+    "logan.pierce@foxglove.example": "valid",
+    "marley.sutton@tidewater.example": "valid",
+    "peyton.ward@maplecrossing.example": "valid",
+    "riley.chen@stonebridge.example": "valid",
+    "sage.dalton@brightwater.example": "valid",
+    "blake.mercer@elmhurst.example": "valid",
+    "cameron.doyle@juniperpoint.example": "valid",
+    "devon.hart@kestrel.example": "valid",
+    "morgan.ashby@hollowell.example": "valid",
+    "elliot.nash@quarrystone.example": "valid",
+    "rory.bishop@ferngrove.example": "valid",
+    "jules.kemp@windmere.example": "valid"
+  }
+}

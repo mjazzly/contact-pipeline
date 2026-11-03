@@ -1,0 +1,15 @@
+First Name,Last Name,Email,Job Title,Company,Company Domain,Employee Band,City,State/Province,Country,Email Status,Round,Row Key
+Avery,Collins,avery.collins@harborline.example,VP Operations,Harborline Freight,harborline.example,201 to 500,Toronto,ON,Canada,valid,round_cases,r0001
+Quinn,Foster,quinn.foster@pinecrest.example,Chief Operating Officer,Pinecrest Health Services,pinecrest.example,"501 to 1,000",Denver,,,valid,round_cases,r0003
+Skyler,Grant,skyler.grant@lakeview.example,"Director, Human Resources",Lakeview Components,lakeview.example,201 to 500,,ON,Canada,valid,round_cases,r0005
+Taylor,Brooks,taylor.brooks@summitridge.example,VP Finance,Summit Ridge Partners,summitridge.example,51 to 200,Austin,TX,United States,valid,round_cases,r0006
+Sam,Lee,sam.lee@northfield.example,Director of Sales,Northfield Supply,northfield.example,201 to 500,Columbus,OH,United States,valid,round_cases,r0010
+Drew,Palmer,drew.palmer@cobaltgrid.example,Head of Technology,Cobalt Grid Systems,cobaltgrid.example,"1,001 to 5,000",Chicago,IL,United States,valid,round_cases,r0013
+Finley,Ross,finley.ross@bluestem.example,VP Sales,Bluestem Energy,bluestem.example,"501 to 1,000",Calgary,AB,Canada,suspect,round_cases,r0015
+Logan,Pierce,logan.pierce@foxglove.example,Head of People,Foxglove Labs,foxglove.example,11 to 50,Raleigh,NC,United States,valid,round_cases,r0018
+Peyton,Ward,peyton.ward@maplecrossing.example,Director-elect,Maple Crossing Hotels,maplecrossing.example,51 to 200,Halifax,NS,Canada,valid,round_cases,r0020
+Riley,Chen,riley.chen@stonebridge.example,Chief of Staff,Stonebridge Manufacturing,stonebridge.example,"1,001 to 5,000",Detroit,MI,United States,valid,round_cases,r0021
+Blake,Mercer,blake.mercer@elmhurst.example,CHIEF FINANCIAL OFFICER,Elmhurst Facilities,elmhurst.example,Unknown,Minneapolis,MN,United States,valid,round_cases,r0023
+Morgan,Ashby,morgan.ashby@hollowell.example,Director of Finance (ask for Morgan),Hollowell Packaging,hollowell.example,"501 to 1,000",Cleveland,OH,United States,valid,round_cases,r0026
+Elliot,Nash,elliot.nash@quarrystone.example,IT Director,Quarrystone Materials,quarrystone.example,"10,001+",Pittsburgh,PA,United States,valid,round_cases,r0027
+Jules,Kemp,jules.kemp@windmere.example,Founder and CEO,Windmere Outdoor Co,windmere.example,11 to 50,Boise,ID,United States,valid,round_cases,r0029

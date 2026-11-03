@@ -1,0 +1,11 @@
+.env
+__pycache__/
+eval/runs/
+eval/runs-mock/
+output/
+
+# never in the public repo
+.DS_Store
+
+# the working brief stays local
+BRIEF.md

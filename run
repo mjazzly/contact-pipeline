@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Short form of run.py through uv. Any further flags go straight through.
+#
+#   ./run demo                  data/demo_round.xlsx, halts at Stop 1
+#   ./run cases --confirm-all   data/round_cases.csv, every stop confirmed
+#   ./run path/to/export.csv --confirm 1=29
+set -euo pipefail
+
+case "${1:-}" in
+  demo)  round=data/demo_round.xlsx ;;
+  cases) round=data/round_cases.csv ;;
+  "")    echo "usage: ./run demo|cases|<file> [run.py flags]" >&2; exit 2 ;;
+  /*)    round="$1" ;;
+  *)     round="$PWD/$1" ;;  # a file named from another folder
+esac
+shift
+cd "$(dirname "$0")"
+
+exec uv run -q --no-project --python 3.12 --with-requirements requirements.txt python run.py --round "$round" "$@"

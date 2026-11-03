@@ -1,0 +1,9 @@
+{
+  "note": "Written by hand before the v1.1 code. Case C21 on data/round_repeats.csv, run with the scripted stand-in: every distinct title is asked once, and every row carrying it gets that one answer.",
+  "rows": 8,
+  "distinct_titles": 4,
+  "titles_sent": ["Chief of Staff", "Head of People", "Director of Finance (ask for [name])", "Office Manager"],
+  "groups": [["r0001", "r0002", "r0003"], ["r0004", "r0005"], ["r0006", "r0007"], ["r0008"]],
+  "stop_3": { "count": 7, "below_floor_rows": ["r0008"] },
+  "request_fields": ["title_key", "title"]
+}

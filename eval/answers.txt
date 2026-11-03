@@ -1,0 +1,2 @@
+# The confirmation the harness gives at every stop, as a person would type it on the command line.
+--confirm-all

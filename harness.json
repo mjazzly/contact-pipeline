@@ -1,0 +1,18 @@
+{
+  "build": "contact-pipeline",
+  "title": "Contact pipeline",
+  "harness": "eval/run_eval.js",
+  "server": { "file": "run.py", "data_env": "PIPELINE_DATA" },
+  "skill": "prompts/title_read.md",
+  "data": "data",
+  "expected": "eval/expected",
+  "answers": "eval/answers.txt",
+  "prices": "prices.json",
+  "checker": "eval/check.py",
+  "runs": "eval/runs",
+  "runs_mock": "eval/runs-mock",
+  "record": "result.json",
+  "gates": { "held": "gates_held", "of": 3 },
+  "bar": "every code case, twenty of twenty two titles, no floor flips, all three gates held",
+  "max_minutes": 15
+}

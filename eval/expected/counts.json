@@ -1,0 +1,10 @@
+{
+  "note": "Written by hand before any code. The count at each stop for data/round_cases.csv.",
+  "stop_1": { "count": 29 },
+  "stop_2": { "count": 22, "excluded": { "country out of scope": 2, "no person location": 2, "malformed email": 1, "blank email": 1, "duplicate email": 1 } },
+  "stop_3": { "count": 17, "below_floor": 5 },
+  "stop_4": { "count": 14, "valid": 13, "suspect": 1, "excluded": { "honeypot": 1, "no_result": 1, "invalid": 1 } },
+  "import_rows": 14,
+  "exclusions": 15,
+  "privacy_payload_title": { "row_key": "r0026", "title": "Director of Finance (ask for [name])" }
+}

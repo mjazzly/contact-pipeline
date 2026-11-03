@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Short form of eval.py through uv. Any further flags go straight through.
+#
+#   ./evals haiku   claude-haiku-5-5
+#   ./evals opus    claude-opus-5-5 at high effort
+#   ./evals mock    scripted stand-in, no key, never counted
+set -euo pipefail
+cd "$(dirname "$0")"
+
+case "${1:-}" in
+  haiku) args=(--model claude-haiku-5-5) ;;
+  opus)  args=(--model claude-opus-5-5 --effort high) ;;
+  mock)  args=(--mock) ;;
+  *)     echo "usage: ./evals haiku|opus|mock [eval.py flags]" >&2; exit 2 ;;
+esac
+shift
+
+exec uv run -q --no-project --python 3.12 --with-requirements requirements.txt python eval.py "${args[@]}" "$@"

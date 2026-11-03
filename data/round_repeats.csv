@@ -1,0 +1,9 @@
+record_id,first_name,last_name,email,phone,job_title,company_name,company_domain,company_industry,company_employees,person_city,person_state,person_country,company_city,company_state,company_country,profile_url,vendor_score
+V-2001,Ash,Benton,ash.benton@larkspur.example,555-0201,Chief of Staff,Larkspur Freight,larkspur.example,Transportation,420,Denver,CO,United States,Denver,CO,United States,https://profiles.example/v2001,80
+V-2002,Brook,Calder,brook.calder@marrowfield.example,555-0202,CHIEF OF STAFF,Marrowfield Clinics,marrowfield.example,Healthcare,1300,Toronto,ON,Canada,Toronto,ON,Canada,https://profiles.example/v2002,74
+V-2003,Corey,Dunn,corey.dunn@nettlebrook.example,555-0203,  Chief  of Staff ,Nettlebrook Foods,nettlebrook.example,Food Production,260,Columbus,OH,United States,Columbus,OH,United States,https://profiles.example/v2003,69
+V-2004,Dale,Emory,dale.emory@larkspur.example,555-0204,Head of People,Larkspur Freight,larkspur.example,Transportation,420,Denver,CO,United States,Denver,CO,United States,https://profiles.example/v2004,77
+V-2005,Ellis,Ford,ellis.ford@osterly.example,555-0205,head of people,Osterly Analytics,osterly.example,Information Services,90,Calgary,AB,Canada,Calgary,AB,Canada,https://profiles.example/v2005,71
+V-2006,Frankie,Gale,frankie.gale@pembrook.example,555-0206,Director of Finance (ask for Frankie),Pembrook Materials,pembrook.example,Construction,780,Tampa,FL,United States,Tampa,FL,United States,https://profiles.example/v2006,83
+V-2007,Gray,Hollis,gray.hollis@quillmore.example,555-0207,Director of Finance (ask for Gray),Quillmore Hotels,quillmore.example,Hospitality,350,Halifax,NS,Canada,Halifax,NS,Canada,https://profiles.example/v2007,66
+V-2008,Harley,Innes,harley.innes@rushwick.example,555-0208,Office Manager,Rushwick Dental Group,rushwick.example,Healthcare,40,Boise,ID,United States,Boise,ID,United States,https://profiles.example/v2008,58

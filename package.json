@@ -1,0 +1,7 @@
+{
+  "name": "contact-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Only for eval/run_eval.js, the Node entry the scorecard starts. The build itself is Python."
+}
